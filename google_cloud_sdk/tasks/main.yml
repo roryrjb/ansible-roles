@@ -1,0 +1,10 @@
+- name: google_cloud_sdk
+  include: "{{ distro }}_{{ release }}.yml"
+
+- name: cloud sql proxy
+  become: true
+  become_method: sudo
+  get_url:
+    url: https://storage.googleapis.com/cloudsql-proxy/v1.13/cloud_sql_proxy.linux.amd64
+    dest: /usr/local/bin/cloud_sql_proxy
+    mode: 0755

@@ -1,0 +1,11 @@
+- name: nginx
+  include: "{{ distro }}_{{ release }}.yml"
+
+- name: config files
+  copy: src={{ item.src }} dest={{ item.dest }}
+  become: true
+  become_method: sudo
+  with_items:
+    - {src: 'nginx.conf', dest: '/etc/nginx/nginx.conf'}
+  notify:
+    - restart nginx

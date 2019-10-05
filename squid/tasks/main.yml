@@ -1,0 +1,11 @@
+- name: squid
+  include: "{{ distro }}_{{ release }}.yml"
+
+- name: config files
+  copy: src={{ item.src }} dest={{ item.dest }}
+  become: true
+  become_method: sudo
+  with_items:
+    - {src: 'squid.conf', dest: '/etc/squid/squid.conf'}
+  notify:
+    - restart squid
