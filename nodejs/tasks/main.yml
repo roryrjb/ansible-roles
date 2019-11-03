@@ -14,7 +14,4 @@
     name: "{{ item }}"
     global: true
   with_items:
-    - standard
     - st
-    - js-beautify
-    - html-beautifier
