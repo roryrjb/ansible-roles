@@ -1,6 +1,4 @@
 - name: google sdk packages
-  become: true
-  become_method: sudo
   aur:
     use: yay
     name:
