@@ -7,3 +7,5 @@
       - python
       - python2-setuptools
       - python-setuptools
+      - python2-pip
+      - python-pip
