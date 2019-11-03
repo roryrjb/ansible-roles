@@ -4,11 +4,9 @@
 - name: python2 packages
   pip:
     name: ['virtualenv', 'psutil']
-    executable: '{{ ansible_env.HOME }}/.local/bin/pip2'
     extra_args: --user
 
 - name: python3 packages
   pip:
-    name: ['pipenv', 'flake8', 'ansible-lint', 'mycli', 'websocket-client']
-    executable: '{{ ansible_env.HOME }}/.local/bin/pip3'
+    name: ['pipenv', 'flake8', 'ansible-lint', 'mycli', 'websocket-client', 'black']
     extra_args: --user
