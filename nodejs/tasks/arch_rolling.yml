@@ -4,4 +4,5 @@
   pacman:
     name:
       - nodejs-lts-dubnium  # 10.x
+      - npm
       - yarn
