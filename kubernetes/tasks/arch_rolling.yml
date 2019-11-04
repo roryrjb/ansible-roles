@@ -3,6 +3,7 @@
     use: yay
     name:
       - google-cloud-sdk
+      - kubernetes-helm
 
 - name: kubectl
   become: true
