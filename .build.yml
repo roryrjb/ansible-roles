@@ -1,0 +1,9 @@
+image: archlinux
+packages:
+  - yamllint
+  - ansible-lint
+tasks:
+  - lint: |
+      cd ansible-roles
+      yamllint */**/*.y*ml
+      ansible-lint */**/*.y*ml

@@ -2,6 +2,8 @@
 
 > Various ansible roles for deployment on servers and desktops
 
+[![builds.sr.ht status](https://builds.sr.ht/~roryrjb/ansible-roles.svg)](https://builds.sr.ht/~roryrjb/ansible-roles?)
+
 ### "Installation"
 
 Either manually copy what you want or if there are a few things of interest
