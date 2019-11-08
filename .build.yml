@@ -5,5 +5,5 @@ packages:
 tasks:
   - lint: |
       cd ansible-roles
-      yamllint */**/*.y*ml
+      yamllint -c config */**/*.y*ml
       ansible-lint */**/*.y*ml
