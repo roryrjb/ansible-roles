@@ -4,9 +4,11 @@
 - name: python2 packages
   pip:
     name: ['virtualenv', 'psutil']
+    executable: pip2
     extra_args: --user
 
 - name: python3 packages
   pip:
     name: ['pipenv', 'flake8', 'ansible-lint', 'mycli', 'websocket-client', 'black']
+    executable: pip3
     extra_args: --user
