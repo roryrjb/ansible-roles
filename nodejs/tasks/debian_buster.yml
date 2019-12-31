@@ -1,0 +1,27 @@
+- name: gpg keys
+  become: true
+  become_method: sudo
+  apt_key:
+    url: "{{ item }}"
+    state: present
+  with_items:
+    - "https://deb.nodesource.com/gpgkey/nodesource.gpg.key"
+    - "https://dl.yarnpkg.com/debian/pubkey.gpg"
+
+- name: repos
+  become: true
+  become_method: sudo
+  apt_repository:
+    repo: "{{ item }}"
+    state: present
+  with_items:
+    - "deb https://deb.nodesource.com/node_10.x disco main"
+    - "deb https://dl.yarnpkg.com/debian/ stable main"
+
+- name: packages
+  become: true
+  become_method: sudo
+  apt:
+    name:
+      - nodejs
+      - yarn
