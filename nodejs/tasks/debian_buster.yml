@@ -15,7 +15,7 @@
     repo: "{{ item }}"
     state: present
   with_items:
-    - "deb https://deb.nodesource.com/node_10.x disco main"
+    - "deb https://deb.nodesource.com/node_10.x {{ release }} main"
     - "deb https://dl.yarnpkg.com/debian/ stable main"
 
 - name: packages
