@@ -1,0 +1,4 @@
+- name: packages
+  homebrew:
+    name:
+      - nginx

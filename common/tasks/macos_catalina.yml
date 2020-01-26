@@ -1,0 +1,14 @@
+- name: packages
+  homebrew:
+    name:
+      - diceware
+      - w3m
+      - vim
+      - tmux
+      - tree
+      - nmap
+      - htop
+      - traceroute
+      - bash-completion
+      - ossp-uuid
+      - cloc

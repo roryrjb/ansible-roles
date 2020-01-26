@@ -1,0 +1,5 @@
+- name: packages
+  homebrew:
+    name:
+      - node@10
+      - yarn

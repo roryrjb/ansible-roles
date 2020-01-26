@@ -1,0 +1,4 @@
+- name: packages
+  homebrew:
+    name:
+      - mysql-client@5.7

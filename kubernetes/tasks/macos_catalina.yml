@@ -1,0 +1,4 @@
+- name: google sdk packages
+  homebrew_cask:
+    name:
+      - google-cloud-sdk
