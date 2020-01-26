@@ -5,6 +5,6 @@
   become: true
   become_method: sudo
   get_url:
-    url: https://storage.googleapis.com/cloudsql-proxy/v1.13/cloud_sql_proxy.linux.amd64
+    url: https://storage.googleapis.com/cloudsql-proxy/v1.13/cloud_sql_proxy.{{ platform }}.{{ arch }}
     dest: /usr/local/bin/cloud_sql_proxy
     mode: 0755

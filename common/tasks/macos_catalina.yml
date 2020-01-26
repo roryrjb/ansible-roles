@@ -8,7 +8,6 @@
       - tree
       - nmap
       - htop
-      - traceroute
       - bash-completion
       - ossp-uuid
       - cloc
