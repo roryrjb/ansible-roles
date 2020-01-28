@@ -1,0 +1,5 @@
+- name: packages
+  homebrew:
+    name:
+      - python2
+      - python3
