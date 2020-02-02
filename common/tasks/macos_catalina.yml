@@ -1,6 +1,8 @@
 - name: packages
-  homebrew:
-    name:
+  macports:
+    name: "{{ ports }}"
+  vars:
+    ports:
       - diceware
       - w3m
       - vim

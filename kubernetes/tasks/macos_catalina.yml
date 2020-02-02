@@ -1,4 +1,7 @@
-- name: google sdk packages
-  homebrew_cask:
-    name:
+- name: ports 
+  macports:
+    name: "{{ ports }}"
+  vars:
+    ports:
       - google-cloud-sdk
+      - helm

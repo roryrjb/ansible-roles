@@ -1,5 +1,7 @@
 - name: packages
-  homebrew:
-    name:
-      - python2
-      - python3
+  macports:
+    name: "{{ ports }}"
+  vars:
+    ports:
+      - python27
+      - python37

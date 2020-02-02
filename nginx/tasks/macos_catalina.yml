@@ -1,4 +1,6 @@
-- name: packages
-  homebrew:
-    name:
+- name: ports
+  macports:
+    name: "{{ ports }}"
+  vars:
+    ports:
       - nginx

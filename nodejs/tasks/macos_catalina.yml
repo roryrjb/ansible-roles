@@ -1,6 +1,8 @@
 - name: packages
-  homebrew:
-    name:
-      - node@10
-      - npm
+  macports:
+    name: "{{ ports }}"
+  vars:
+    ports:
+      - nodejs10
+      - npm6
       - yarn
