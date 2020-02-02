@@ -1,4 +1,6 @@
 - name: ports 
+  become: true
+  become_method: sudo
   macports:
     name: "{{ ports }}"
   vars:
