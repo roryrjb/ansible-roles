@@ -5,4 +5,4 @@
     name: "{{ ports }}"
   vars:
     ports:
-      - mysql5
+      - mysql57
