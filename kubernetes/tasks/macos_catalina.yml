@@ -6,4 +6,4 @@
   vars:
     ports:
       - google-cloud-sdk
-      - helm
+      - helm-2.16
