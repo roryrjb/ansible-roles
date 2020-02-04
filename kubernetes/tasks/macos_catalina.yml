@@ -5,5 +5,4 @@
     name: "{{ ports }}"
   vars:
     ports:
-      - google-cloud-sdk
       - helm-2.16
