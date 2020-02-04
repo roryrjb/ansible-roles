@@ -1,4 +1,4 @@
-- name: ports 
+- name: ports
   become: true
   become_method: sudo
   macports:
