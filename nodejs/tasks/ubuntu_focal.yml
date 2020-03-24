@@ -22,4 +22,5 @@
   apt:
     name:
       - nodejs
+      - npm
       - yarn
