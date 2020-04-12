@@ -1,9 +1,0 @@
-- name: packages
-  become: true
-  become_method: sudo
-  macports:
-    name: "{{ ports }}"
-  vars:
-    ports:
-      - python27
-      - python37

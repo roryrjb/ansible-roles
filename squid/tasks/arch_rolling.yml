@@ -1,7 +1,0 @@
-- name: squid
-  become: true
-  become_method: sudo
-  pacman:
-    name:
-      - squid
-    state: present

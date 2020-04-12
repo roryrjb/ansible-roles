@@ -1,6 +1,0 @@
-- name: restart squid
-  become: true
-  become_method: sudo
-  systemd:
-    name: squid
-    state: restarted
