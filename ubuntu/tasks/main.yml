@@ -1,2 +1,0 @@
-- name: ubuntu dev
-  include: "{{ distro }}_{{ release }}.yml"
