@@ -1,10 +1,2 @@
 - name: nodejs
   include: "{{ distro }}_{{ release }}.yml"
-
-- name: npmrc
-  blockinfile:
-    path: "{{ ansible_env.HOME }}/.npmrc"
-    marker: "# {mark} ANSIBLE MANAGED BLOCK"
-    create: true
-    content: |
-      prefix={{ ansible_env.HOME }}/.npm-packages
