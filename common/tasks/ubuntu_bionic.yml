@@ -5,7 +5,7 @@
     name:
       - diceware
       - w3m
-      - vim-nox
+      - vim
       - tmux
       - tree
       - rsync
