@@ -22,11 +22,3 @@
   apt:
     name:
       - docker-ce
-
-- name: docker service
-  become: true
-  become_method: sudo
-  systemd:
-    name: docker
-    state: started
-    enabled: true
