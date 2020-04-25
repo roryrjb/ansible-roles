@@ -3,6 +3,7 @@
   become_method: sudo
   apt:
     name:
+      - pinentry-curses
       - diceware
       - w3m
       - vim
