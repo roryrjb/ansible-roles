@@ -14,7 +14,7 @@
     repo: "{{ item }}"
     state: present
   with_items:
-    - "deb [arch=amd64] https://download.docker.com/linux/{{ distro }} disco stable"
+    - "deb [arch=amd64] https://download.docker.com/linux/{{ distro }} eoan stable"
 
 - name: packages
   become: true
@@ -22,3 +22,11 @@
   apt:
     name:
       - docker-ce
+
+- name: docker service
+  become: true
+  become_method: sudo
+  systemd:
+    name: docker
+    status: started
+    enabled: true
