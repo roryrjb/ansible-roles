@@ -28,5 +28,5 @@
   become_method: sudo
   systemd:
     name: docker
-    status: started
+    state: started
     enabled: true
