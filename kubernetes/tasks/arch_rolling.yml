@@ -12,3 +12,4 @@
   pacman:
     name:
       - kubectl
+      - minikube
