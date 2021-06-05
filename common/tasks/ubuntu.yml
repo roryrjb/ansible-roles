@@ -3,16 +3,16 @@
   become_method: sudo
   apt:
     name:
-      - pinentry-curses
-      - w3m
-      - vim
-      - tmux
-      - rsync
-      - nmap
-      - htop
       - bash-completion
+      - tmux
+      - fzf
+      - jq
+      - ripgrep
+      - rsync
+      - htop
       - curl
-      - git
-      - git-email
-      - strace
       - dnsutils
+      - direnv
+      - nmap
+      - yadm
+      - s3cmd

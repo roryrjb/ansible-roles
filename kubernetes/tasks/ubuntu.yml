@@ -9,7 +9,7 @@
   become: true
   become_method: sudo
   apt_repository:
-    repo: "deb http://packages.cloud.google.com/apt cloud-sdk-disco main"
+    repo: "deb https://packages.cloud.google.com/apt cloud-sdk main"
     state: present
 
 - name: google sdk packages
@@ -19,3 +19,4 @@
     name:
       - google-cloud-sdk
       - kubectl
+      - cloudsql-proxy

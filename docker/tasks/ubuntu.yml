@@ -6,6 +6,7 @@
     state: present
   with_items:
     - "https://download.docker.com/linux/debian/gpg"
+    - "https://aquasecurity.github.io/trivy-repo/deb/public.key"
 
 - name: repos
   become: true
@@ -14,7 +15,8 @@
     repo: "{{ item }}"
     state: present
   with_items:
-    - "deb [arch=amd64] https://download.docker.com/linux/{{ distro }} eoan stable"
+    - "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ lts_release }} stable"
+    - "deb https://aquasecurity.github.io/trivy-repo/deb {{ lts_release }} main"
 
 - name: packages
   become: true
@@ -22,3 +24,5 @@
   apt:
     name:
       - docker-ce
+      - trivy
+      - docker-compose

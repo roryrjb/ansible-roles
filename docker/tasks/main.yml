@@ -1,5 +1,5 @@
 - name: docker
-  include: "{{ distro }}_{{ release }}.yml"
+  include: "{{ distro }}.yml"
 
 - name: create docker group
   become: true
@@ -13,7 +13,8 @@
   become_method: sudo
   user:
     name: "{{ ansible_user }}"
-    groups: docker
+    groups:
+      - docker
     append: "yes"
 
 - name: enable docker service

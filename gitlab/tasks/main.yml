@@ -1,2 +1,0 @@
-- name: gitlab
-  include: "{{ distro }}_{{ release }}.yml"

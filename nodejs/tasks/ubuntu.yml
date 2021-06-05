@@ -15,7 +15,7 @@
     repo: "{{ item }}"
     state: present
   with_items:
-    - "deb https://deb.nodesource.com/node_10.x focal main"
+    - "deb [arch=amd64] https://deb.nodesource.com/node_14.x {{ lts_release }} main"
     - "deb https://dl.yarnpkg.com/debian/ stable main"
 
 - name: packages

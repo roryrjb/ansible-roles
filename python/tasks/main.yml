@@ -1,2 +1,8 @@
-- name: python
-  include: "{{ distro }}_{{ release }}.yml"
+- name: python 3 packages
+  pip:
+    name: "{{ item }}"
+    executable: pip
+    extra_args: --user
+  loop:
+    - poetry
+    - pipenv
